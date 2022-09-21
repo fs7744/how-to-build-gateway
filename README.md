@@ -44,6 +44,7 @@
     - [ ] Logging
         - [ ] log rotate
         - [ ] elk
+        - [ ] loki
     - [ ] Metrics
     - [ ] Tracing
     - [ ] https
