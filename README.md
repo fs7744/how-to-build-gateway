@@ -10,8 +10,8 @@
 
 初期大纲如下：
 
-* [x] gateway 是什么？
-* [x] 反向代理是什么？
+* [x] [gateway 是什么？](0.-gateway-shi-shi-mo.md)
+* [x] [反向代理是什么？](1.-fan-xiang-dai-li-shi-shi-mo.md)
 * [ ] 如何选择小成本自建api gateway
   * [ ] 采用什么样的简单架构
     * [ ] 为什么选择openresty

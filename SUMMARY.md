@@ -1,4 +1,4 @@
-# Table of contents
+# 目录
 
 * [介绍](README.md)
 * [0. Gateway 是什么？](0.-gateway-shi-shi-mo.md)
