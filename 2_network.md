@@ -4,6 +4,10 @@
 
 既然我们要尝试完成一个网关，我们可能的了解一下四层、七层到底是什么，否则我们做什么呢?
 
+这里所谈的四层代理和七层代理，便是基于OSI七层模型来划分的。
+
+<figure><img src=".gitbook/assets/f_s.png" alt=""><figcaption></figcaption></figure>
+
 ## OSI 七层网络模型
 
 OSI（Open System Interconnect），即开放式系统互联。 一般都叫 OSI 参考模型，是 ISO（国际标准化组织）组织在 1985 年研究的网络互连模型。ISO 为了更好的使网络应用更为普及，推出了 OSI 参考模型。其含义就是推荐所有公司使用这个规范来控制网络。这样所有公司都有相同的规范，就能互联了。
