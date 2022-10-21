@@ -4,73 +4,73 @@
 
 这是一本老笨鸟口齿不清介绍如何构建一个满足大部分中小公司性能需求的网关系统的流水账。
 
-希望可以通过一些口水话介绍api gateway 技术，以及一点点实战演示能帮助大家理解。
+希望可以通过一些口水话介绍 api gateway 技术，以及一点点实战演示能帮助大家理解。
 
-由于老笨鸟水平不足，奋斗多年依然只达到别人的起跑线（会用但讲不清楚底层原理），所以只能先选用成熟的openresty技术避免大家撞见底层性能的冰山大关。
+由于老笨鸟水平不足，奋斗多年依然只达到别人的起跑线（会用但讲不清楚底层原理），所以只能先选用成熟的 openresty 技术避免大家撞见底层性能的冰山大关。
 
 初期大纲如下：
 
-* [x] [gateway 是什么？](0.-gateway-shi-shi-mo.md)
-* [x] [反向代理是什么？](1.-fan-xiang-dai-li-shi-shi-mo.md)
-* [ ] 网络概念
-  * [ ] 7 层模型
-  * [ ] 3 层网关
-  * [ ] 7 层网关
-* [ ] 如何选择小成本自建api gateway
-  * [ ] 采用什么样的简单架构
-    * [ ] 为什么选择openresty
-    * [ ] 配置更新机制选择
-    * [ ] 监控体系opentelemetry
-* [ ] 构建gateway实战
-  * [ ] luarocks
-  * [ ] tcp / udp gateway
-    * [ ] openresty 如何配置 tcp / udp
-    * [ ] 负载均衡之一 轮训
-    * [ ] 热重启
-  * [ ] 配置更新
-    * [ ] 文件配置
-    * [ ] 文件watch
-    * [ ] event事件通知
-    * [ ] 通过etcd扩展远程更新能力
-  * [ ] http gateway
-    * [ ] 简单路由实现
-    * [ ] 成熟路由介绍
-    * [ ] 负载均衡补齐 hash、最少连接数、ewma
-  * [ ] dns
-    * [ ] dns 解决host域名配置负载均衡问题
-    * [ ] dns change checker
-  * [ ] lua 动态插件机制
-    * [ ] 跨域
-    * [ ] websocket
-    * [ ] 认证 jwt-auth
-    * [ ] 限流
-    * [ ] 蓝绿、金丝雀
-    * [ ] lua serverless function
-    * [ ] 缓存
-  * [ ] Logging
-    * [ ] log rotate
-    * [ ] elk
-    * [ ] loki
-  * [ ] Metrics
-  * [ ] Tracing
-  * [ ] https
-    * [ ] 动态证书
-    * [ ] sni 代理
-  * [ ] nginx patch
-    * [ ] remove server token
-    * [ ] keepalive config
-  * [ ] 多语言支持
-    * [ ] unix domain socket
-    * [ ] wasm
-  * [ ] 安全
-    * [ ] simple lua waf
-    * [ ] modsecurity
-  * [ ] \[ ]
-* [ ] Cloudflare 在nginx遇见的一些局限
+- [x] [gateway 是什么？](0_gateway.md)
+- [x] [反向代理是什么？](1_reverse_proxy.md)
+- [x] [网络概念](2_network.md)
+  - [x] 7 层模型
+  - [x] 4 层网关
+  - [x] 7 层网关
+- [ ] 如何选择小成本自建 api gateway
+  - [ ] 采用什么样的简单架构
+    - [ ] 为什么选择 openresty
+    - [ ] 配置更新机制选择
+    - [ ] 监控体系 opentelemetry
+- [ ] 构建 gateway 实战
+  - [ ] luarocks
+  - [ ] tcp / udp gateway
+    - [ ] openresty 如何配置 tcp / udp
+    - [ ] 负载均衡之一 轮训
+    - [ ] 热重启
+  - [ ] 配置更新
+    - [ ] 文件配置
+    - [ ] 文件 watch
+    - [ ] event 事件通知
+    - [ ] 通过 etcd 扩展远程更新能力
+  - [ ] http gateway
+    - [ ] 简单路由实现
+    - [ ] 成熟路由介绍
+    - [ ] 负载均衡补齐 hash、最少连接数、ewma
+  - [ ] dns
+    - [ ] dns 解决 host 域名配置负载均衡问题
+    - [ ] dns change checker
+  - [ ] lua 动态插件机制
+    - [ ] 跨域
+    - [ ] websocket
+    - [ ] 认证 jwt-auth
+    - [ ] 限流
+    - [ ] 蓝绿、金丝雀
+    - [ ] lua serverless function
+    - [ ] 缓存
+  - [ ] Logging
+    - [ ] log rotate
+    - [ ] elk
+    - [ ] loki
+  - [ ] Metrics
+  - [ ] Tracing
+  - [ ] https
+    - [ ] 动态证书
+    - [ ] sni 代理
+  - [ ] nginx patch
+    - [ ] remove server token
+    - [ ] keepalive config
+  - [ ] 多语言支持
+    - [ ] unix domain socket
+    - [ ] wasm
+  - [ ] 安全
+    - [ ] simple lua waf
+    - [ ] modsecurity
+  - [ ] \[ ]
+- [ ] Cloudflare 在 nginx 遇见的一些局限
 
 ## PS：
 
-部分代码和组件引用于成熟的gateway平台 [apisix](https://apisix.apache.org/) 和 [Kong](https://konghq.com/)
+部分代码和组件引用于成熟的 gateway 平台 [apisix](https://apisix.apache.org/) 和 [Kong](https://konghq.com/)
 
 本文以及相关代码项目借鉴仅做学习目的，如有商用请自行获取相关授权。
 
