@@ -17,6 +17,7 @@
   - [x] 4 层网关
   - [x] 7 层网关
 - [x] [网络协议](3_protocol.md)
+- [x] [技术选型](4_choose.md)
 - [ ] 如何选择小成本自建 api gateway
   - [ ] 采用什么样的简单架构
     - [ ] 为什么选择 openresty
