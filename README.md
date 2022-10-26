@@ -18,11 +18,10 @@
   - [x] 7 层网关
 - [x] [网络协议](3_protocol.md)
 - [x] [技术选型](4_choose.md)
-- [ ] 如何选择小成本自建 api gateway
-  - [ ] 采用什么样的简单架构
-    - [ ] 为什么选择 openresty
-    - [ ] 配置更新机制选择
-    - [ ] 监控体系 opentelemetry
+- [x] [了解openresty](5_openresty.md)
+- [] [luarocks](6_luarocks.md)
+  - [ ] 配置更新机制选择
+  - [ ] 监控体系 opentelemetry
 - [ ] 构建 gateway 实战
   - [ ] luarocks
   - [ ] tcp / udp gateway
