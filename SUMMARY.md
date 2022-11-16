@@ -8,3 +8,4 @@
 - [4. 技术选型](4_choose.md)
 - [5. 了解openresty](5_openresty.md)
 - [6. luarocks](6_luarocks.md)
+- [7. 热重启原理](7_hot_restart.md)

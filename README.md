@@ -19,20 +19,17 @@
 - [x] [网络协议](3_protocol.md)
 - [x] [技术选型](4_choose.md)
 - [x] [了解openresty](5_openresty.md)
-- [] [luarocks](6_luarocks.md)
-  - [ ] 配置更新机制选择
-  - [ ] 监控体系 opentelemetry
-- [ ] 构建 gateway 实战
-  - [ ] luarocks
-  - [ ] tcp / udp gateway
-    - [ ] openresty 如何配置 tcp / udp
-    - [ ] 负载均衡之一 轮训
-    - [ ] 热重启
-  - [ ] 配置更新
+- [x] [luarocks](6_luarocks.md)
+- [ ] [热重启原理](7_hot_restart.md)
+- [ ] 配置更新机制选择
     - [ ] 文件配置
     - [ ] 文件 watch
     - [ ] event 事件通知
     - [ ] 通过 etcd 扩展远程更新能力
+- [ ] 监控体系 opentelemetry
+  - [ ] tcp / udp gateway
+    - [ ] openresty 如何配置 tcp / udp
+    - [ ] 负载均衡之一 轮训
   - [ ] http gateway
     - [ ] 简单路由实现
     - [ ] 成熟路由介绍
